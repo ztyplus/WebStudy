@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    margin: 20px auto 0;
+    outline: 1px solid red;
+    padding: 20px;
+}
+
+.item {
+    margin: 10px;
+    width: 85px;
+    height: 60px;
+    border: 1px solid blue;
+}
+
+.img1 {
+    background: url(../images/sprite.jpg);
+    background-position: -280px -240px;
+}
+
+.img2 {
+    background: url(../images/sprite.jpg);
+    background-position: -365px -240px;
+}
+
+.img3 {
+    background: url(../images/sprite.jpg);
+    background-position: -365px -165px;
+}
