@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <form class="container">
+        <h1>用户注册</h1>
+        <div class="form-item">
+            <input class="input" type="text" placeholder="请输入11位手机号">
+        </div>
+        <div class="form-item clearfix captcha">
+            <input class="input fl" type="text" placeholder="请填写验证码">
+            <button type="button" class="fr" disabled>发送验证码</button>
+        </div>
+        
+        <div class="form-item">
+            <input class="input" type="password" placeholder="请输入密码">
+        </div>
+        <div class="form-item">
+            <input class="input" type="password" placeholder="请再次输入密码">
+        </div>
+        <div class="form-item ">
+            <select class="input" name="" id="" multiple>
+                <option value="">爱好1</option>
+                <option value="">爱好2</option>
+                <option value="">爱好3</option>
+                <option value="">爱好4</option>
+                <option value="">爱好5</option>
+                <option value="">爱好6</option>
+            </select>
+        </div>
+        <div class="form-item clearfix">
+            <div class="fl title">性别</div>
+            <div class="fl">
+                <label>
+                    <input class="" type="radio" checked name="sex">
+                    <span>男</span>
+                </label>
+                <label>
+                    <input class="" type="radio" name="sex">
+                    <span>女</span>
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <textarea class="input" name="" id="" cols="30" rows="10" placeholder="请输入个人简介"></textarea>
+        </div>
+        <div class="form-item policy">
+            <label>
+                <input class="" type="checkbox" name="" id="">
+                <span>台湾是中国领土不可分割的一部分</span>
+            </label>
+        </div>
+        <div class="form-item clearfix">
+            <button class="fl">立即注册</button>
+            <button class="fr" type="reset">重置表单</button>
+        </div>
+    </form>
+</body>
+</html>

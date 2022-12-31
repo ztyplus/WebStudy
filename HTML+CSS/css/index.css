@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: rgb(39, 40, 34);
+  color: #333;
+}
+.container {
+  background: #fff;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.input:focus {
+  border-color: #2997f7;
+}
+
+select.input {
+  height: 100px;
+  padding: 10px;
+}
+
+textarea.input {
+  height: 100px;
+  padding: 10px;
+  resize: none;
+}
+
+button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #2997f7;
+  color: #fff;
+  font-size: 14px;
+}
+
+button:hover{
+  background: hsla(208, 93%, 56%, 0.8);
+  cursor: pointer;
+}
+button:disabled{
+  background: #2997f757;
+  cursor: not-allowed;
+}
+.fl {
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.captcha .input {
+  width: 170px;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+.policy {
+  font-size: 12px;
+  
+}
+.policy span{
+  vertical-align: 2px;
+}
+
+label {
+  cursor: pointer;
+}
+
+label input~span {
+  color: #aaa;
+}
+label input:checked~span {
+  color: #333;
+}
+
+input::placeholder {
+  color: #ccc;
+}
