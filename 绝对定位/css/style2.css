@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    outline: 1px solid #000;
+    width: 230px;
+    height: 140px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.item img {
+    width: 230px;
+    height: 140px;
+}
+
+.item .aside {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    color: #fff;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+.aside .number {
+    float: left;
+}
+
+.aside .date {
+    float: right;
+}
+
+.number::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: -3px;
+    background: url(../assets/icons.png) no-repeat;
+    background-position: -255px  -62px;
+    margin-right: -3px;
+}
+
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.play {
+    top: 50%;
+    left: 50%;
+    margin-top: -21px;
+    margin-left: -21px;
+    position: absolute;
+    background: url(../assets//icons.png) no-repeat;
+    width: 42px;
+    height: 42px;
+    background-position: -191px -64px;
+
+}
