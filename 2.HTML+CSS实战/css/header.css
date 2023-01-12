@@ -1,0 +1,130 @@
+.header {
+  height: 100px;
+  position: relative;
+}
+
+.header h1 {
+  display: none;
+}
+.header-logo {
+  background: url('../img/logo.png');
+  background-size: cover;
+  width: 56px;
+  height: 56px;
+  margin-top: 22px;
+  margin-right: 172px;
+}
+
+.header-menu>a {
+  height: 100px;
+  line-height: 100px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.header-submenu {
+  display: none;
+  z-index: 50;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 30px;
+}
+.header-cover img {
+  height: 110px;
+  width: 160px;
+}
+
+.header-submenu a {
+  width: 204px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.header-cover {
+  border-right: 1px solid #eee;
+}
+
+.header-submenu a:last-child .header-cover {
+  border-right: none;
+}
+.header-name {
+  margin-top: 10px;
+  color: #333;
+}
+
+.header-price {
+  color: #ff6700;
+}
+.header-menu:hover .header-submenu {
+  display: block;
+}
+
+.header-search input {
+  width: 245px;
+  height: 50px;
+  font-size: 16px;
+  padding: 0 15px;
+  margin-top: 25px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.header-searchicon {
+  height: 50px;
+  width: 55px;
+  margin-top: 25px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: none;
+  color: #777;
+}
+.header-searchicon .iconfont {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-suggest {
+  font-size: 12px;
+  left: 0;
+  top: 75px;
+  display: none;
+  width: 245px;
+  border: 1px solid #ff6700;
+  border-top: none;
+  z-index: 99;
+  background: #fff;
+}
+
+.header-suggest a {
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.header-suggest a:hover {
+  background: #eee;
+  color: inherit;
+}
+
+.header-search input:focus ~ .header-suggest {
+  display: block;
+}
+.header-search input:hover {
+  border-color: #aaa;
+}
+.header-search input:focus {
+  border-color: #ff6700;
+}
+.header-search input:focus ~ .header-searchicon {
+  border-color: #ff6700;
+}
+.header-searchicon:hover {
+  background: #ff6700;
+  color: #fff;
+  border-color: #ff6700;
+}
