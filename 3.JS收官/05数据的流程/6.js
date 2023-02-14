@@ -483,28 +483,129 @@ var students = [
 
 // 遍历输出学生的姓名
 
+for(i = 0; i < students.length; i++){
+  console.log(students[i].name);
+}
+
 // 得到所有女生（新数组）
 
+var newArr = [];
+for(i = 0; i < students.length; i++){
+  if(students[i].sex === '女'){
+    newArr.push(students[i]);
+  }
+}
+console.log(newArr);
 // 得到所有年龄在25岁以下的女生（新数组）
 
+
+var newArr2 = [];
+for(i = 0; i < students.length; i++){
+  if(students[i].sex === '女' && students[i].age < 25){
+    newArr2.push(students[i]);
+  }
+}
+console.log(newArr2);
+
 // 得到所有姓陈的学生（新数组）
+var newArr3 = [];
+for(i = 0; i < students.length; i++){
+  if(students[i].name[0] === '陈'){
+    newArr3.push(students[i]);
+  }
+}
+console.log(newArr3);
 
 // 得到所有电话号码以1结尾的学生（新数组）
+var newArr4 = [];
+for(i = 0; i < students.length; i++){
+  if(students[i].tel[students[i].tel.length - 1] === '1'){
+    newArr4.push(students[i]);
+  }
+}
+console.log(newArr4);
+
 
 // 得到所有学生姓名组成的数组（新数组）
+var newArr5 = [];
+for(i = 0; i < students.length; i++){
+  newArr5.push(students[i].name);
+}
+console.log(newArr5);
 
 // 得到所有女生的姓名数组（新数组）
 
+var newArr6 = [];
+for(i = 0; i < students.length; i++){
+  if(students[i].sex === '女') {
+    newArr6.push(students[i].name);
+  }
+}
+console.log(newArr6);
+
 // 得到所有女生的姓名和电话号码 [ {name:'monica', tel:'18122223333'} ]
 
+var newArr7 = [];
+for(i = 0; i < students.length; i++){
+  if(students[i].sex === '女') {
+    newArr7.push({name: students[i].name, tel: students[i].tel});
+  }
+}
+console.log(newArr7);
+
 // 得到所有学生的年龄的总和
+var sum = 0;
+for(i = 0; i < students.length; i++){
+  sum += students[i].age;
+}
+console.log(sum);
 
 // 得到所有学生的平均年龄
+var sum = 0;
+for(i = 0; i < students.length; i++){
+  sum += students[i].age;
+}
+console.log(sum / students.length);
 
 // 得到一个对象： {name:['张三', '李四', ...], age: [17, 25, ...]}
 
+var newObj = {};
+var name = [];
+var age = [];
+for(i = 0; i < students.length; i++){
+  name.push(students[i].name);
+  age.push(students[i].age);
+}
+newObj['name'] = name;
+newObj['age'] = age;
+console.log(newObj);
+
 // 找到id为796997的学生对象
+var stu = {}
+for(i = 0; i < students.length; i++){
+  if(students[i].id === 796997){
+    stu = students[i];
+  }
+}
+console.log(stu);
 
 // 是否包含年龄大于28岁的男生
+var isFind = false;
+for(i = 0; i < students.length; i++){
+  if(students[i].age < 28){
+    isFind = true;
+    break;
+  }
+}
+console.log(isFind);
 
 // 是否所有的女生年龄都在28岁以内
+
+var flag = true;
+for(i = 0; i < students.length; i++){
+  if(students[i].age > 28 && students[i].sex === '女'){
+    flag = false;
+    break;
+  }
+}
+console.log(flag);
