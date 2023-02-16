@@ -38,7 +38,6 @@ var nums3 = [6, 3, 1];
 /* 
 3. 思考题：判断nums3中是否所有数字都在nums中存在，输出是或否
 */
-
 var result = true;
 for(var i = 0; i < nums3.length; i++){
     if(!includes(nums,nums3[i])){
@@ -47,3 +46,5 @@ for(var i = 0; i < nums3.length; i++){
     }
 }
 console.log(result ? "是" : '否');
+
+
